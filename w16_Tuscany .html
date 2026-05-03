@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+ https://username.github.io/w16_Tuscany.html 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Taste of Tuscany - Italian Restaurant</title>
+    <link type="text/css" rel="stylesheet" href="w16_Tuscany.css" />
+
+    <script type="text/javascript">
+
+        function showSpecials() {
+            document.getElementById("specials-popup").style.display = "block";
+        }
+
+        function hideSpecials() {
+            document.getElementById("specials-popup").style.display = "none";
+        }
+
+    </script>
+</head>
+<body>
+
+    <!-- Main restaurant page -->
+    <article id="main-page">
+
+        <div class="header-banner">
+            <h1>A Taste of Tuscany</h1>
+            <h2>Italian Restaurant</h2>
+        </div>
+
+        <p class="address">234 Arezzo Avenue  Sherwood Park</p>
+
+        <div class="container">
+
+            <a href="https://www.pexels.com/photo/food-italian-pasta-dinner-5852228/" target="_blank">
+                <img src="https://images.pexels.com/photos/5852228/pexels-photo-5852228.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Italian pasta dish">
+            </a>
+
+            <h3>Welcome to Our Restaurant</h3>
+
+            <ul>
+                <li><b>Fine Italian Dining</b></li>
+                <li><span class="special-link" onclick="showSpecials()">Daily Specials</span></li>
+                <li><b>Licensed</b></li>
+                <li><b>Banquet Room</b></li>
+                <li><b>Open Daily Until 11 pm</b></li>
+                <li><b>Eat In, Take Out, Delivery</b></li>
+            </ul>
+
+            <div class="contact">
+                Call 780.555.1234
+            </div>
+
+        </div>
+
+    </article>
+
+    <!-- Specials popup (hidden by CSS until user clicks Daily Specials) -->
+    <article id="specials-popup">
+
+        <h1>Today's Special</h1>
+
+        <a href="https://www.pexels.com/photo/cooked-meat-on-plate-4551832/" target="_blank">
+            <img src="https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Beef rolls dinner">
+        </a>
+
+        <div class="special-dish">
+            <span class="dish-name">Valigette</span> (Beef Rolls)
+        </div>
+
+        <div class="price">$14.95</div>
+
+        <div class="includes">Includes any two of:</div>
+
+        <ol>
+            <li>Pasta e Fagioli</li>
+            <li>Ravioli Nudi</li>
+            <li>Fettunta</li>
+            <li>Crostini con Salsiccia</li>
+            <li>Ribollita</li>
+        </ol>
+
+        <p class="close-link" onclick="hideSpecials()">Close</p>
+
+    </article>
+
+</body>
+</html>
